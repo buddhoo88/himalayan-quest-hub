@@ -5,23 +5,23 @@ const About = () => {
   const features = [
     {
       icon: <Target className="h-8 w-8 text-primary" />,
-      title: "Цель экспедиции",
-      description: "Поиск и изучение древних артефактов тибетской цивилизации, скрытых в высокогорных районах Гималаев"
+      title: "Expedition Goal",
+      description: "Search and study ancient artifacts of Tibetan civilization hidden in the high-altitude regions of the Himalayas"
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,
-      title: "Локация",
-      description: "Труднодоступные районы Тибета на высоте 4000-5500 метров, где по легендам спрятаны сокровища"
+      title: "Location",
+      description: "Remote areas of Tibet at altitudes of 4000-5500 meters, where treasures are hidden according to legends"
     },
     {
       icon: <Calendar className="h-8 w-8 text-primary" />,
-      title: "Продолжительность",
-      description: "18-месячная экспедиция с тремя основными сезонами раскопок и исследований"
+      title: "Duration",
+      description: "18-month expedition with three main seasons of excavations and research"
     },
     {
       icon: <Award className="h-8 w-8 text-primary" />,
-      title: "Научная ценность",
-      description: "Потенциал открытия новых данных о древних торговых путях и культурных связях"
+      title: "Scientific Value",
+      description: "Potential to discover new data about ancient trade routes and cultural connections"
     }
   ];
 
@@ -30,11 +30,11 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent">
-            О проекте
+            About the Project
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Наша международная археологическая экспедиция отправляется в самые отдаленные уголки Гималаев 
-            в поисках утерянных сокровищ древней тибетской цивилизации.
+            Our international archaeological expedition ventures into the most remote corners of the Himalayas 
+            in search of lost treasures of ancient Tibetan civilization.
           </p>
         </div>
 
@@ -55,21 +55,21 @@ const About = () => {
         </div>
 
         <Card className="p-8 bg-gradient-card border-himalayan-moss/30">
-          <h3 className="text-2xl font-bold mb-4 text-primary">Историческое значение</h3>
+          <h3 className="text-2xl font-bold mb-4 text-primary">Historical Significance</h3>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Гималайский регион хранит множество тайн древней истории. По данным тибетских хроник 
-              и китайских исторических документов, в этих горах находятся захоронения правителей 
-              древнего королевства, а также храмовые сокровищницы, спрятанные от завоевателей.
+              The Himalayan region holds many secrets of ancient history. According to Tibetan chronicles 
+              and Chinese historical documents, these mountains contain burial sites of ancient kingdom rulers, 
+              as well as temple treasuries hidden from conquerors.
             </p>
             <p>
-              Наша экспедиция использует современные технологии: георадар, дроны с тепловизорами 
-              и спутниковую картографию для обнаружения скрытых структур под многовековыми наносами.
+              Our expedition uses modern technologies: ground-penetrating radar, thermal drones, 
+              and satellite cartography to detect hidden structures beneath centuries-old sediments.
             </p>
             <p>
-              Ожидаемые находки включают золотые и серебряные изделия, древние рукописи, 
-              религиозные артефакты и предметы быта, которые помогут лучше понять культуру 
-              и торговые связи древнего Тибета.
+              Expected finds include gold and silver artifacts, ancient manuscripts, 
+              religious objects, and everyday items that will help better understand the culture 
+              and trade connections of ancient Tibet.
             </p>
           </div>
         </Card>

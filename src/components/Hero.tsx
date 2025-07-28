@@ -24,17 +24,17 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 py-20">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent animate-fade-in">
-          ГИМАЛАЙСКАЯ ЭКСПЕДИЦИЯ
+          HIMALAYAN EXPEDITION
         </h1>
         
         <p className="text-xl md:text-2xl text-gold-light mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Поиск затерянных сокровищ древней цивилизации
+          Search for lost treasures of ancient civilization
         </p>
         
         <div className="flex flex-wrap justify-center gap-6 mb-12 text-foreground animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="flex items-center space-x-2">
             <MapPin className="h-5 w-5 text-primary" />
-            <span>Тибет, Гималаи</span>
+            <span>Tibet, Himalayas</span>
           </div>
           <div className="flex items-center space-x-2">
             <Calendar className="h-5 w-5 text-primary" />
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center space-x-2">
             <Users className="h-5 w-5 text-primary" />
-            <span>Международная команда</span>
+            <span>International team</span>
           </div>
         </div>
         
@@ -52,7 +52,7 @@ const Hero = () => {
             className="bg-gradient-gold hover:shadow-gold transition-all duration-300 transform hover:scale-105"
             onClick={scrollToAbout}
           >
-            Узнать больше
+            Learn more
           </Button>
           <Button 
             size="lg" 
@@ -60,7 +60,7 @@ const Hero = () => {
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             onClick={() => document.getElementById('support')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Поддержать проект
+            Support project
           </Button>
         </div>
       </div>

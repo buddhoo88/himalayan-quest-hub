@@ -10,24 +10,24 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <Mountain className="h-8 w-8 text-primary" />
               <span className="text-xl font-bold bg-gradient-gold bg-clip-text text-transparent">
-                Гималайская Экспедиция
+                Himalayan Expedition
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Международная археологическая экспедиция в поисках затерянных сокровищ 
-              древней тибетской цивилизации в высокогорных районах Гималаев.
+              International archaeological expedition in search of lost treasures 
+              of ancient Tibetan civilization in the high-altitude regions of the Himalayas.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Быстрые ссылки</h3>
+            <h3 className="text-lg font-semibold text-foreground">Quick Links</h3>
             <div className="space-y-2">
               {[
-                { label: 'О проекте', href: '#about' },
-                { label: 'Галерея', href: '#gallery' },
-                { label: 'Поддержать', href: '#support' },
-                { label: 'Контакты', href: '#contacts' }
+                { label: 'About', href: '#about' },
+                { label: 'Gallery', href: '#gallery' },
+                { label: 'Support', href: '#support' },
+                { label: 'Contacts', href: '#contacts' }
               ].map((link) => (
                 <a
                   key={link.label}
@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Контакты</h3>
+            <h3 className="text-lg font-semibold text-foreground">Contacts</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
@@ -66,8 +66,8 @@ const Footer = () => {
 
         <div className="border-t border-himalayan-moss/30 mt-8 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Гималайская Экспедиция. Все права защищены. 
-            <span className="text-primary ml-2">Поиск сокровищ продолжается</span>
+            © 2024 Himalayan Expedition. All rights reserved. 
+            <span className="text-primary ml-2">The treasure hunt continues</span>
           </p>
         </div>
       </div>

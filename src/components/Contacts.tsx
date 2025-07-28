@@ -8,7 +8,7 @@ const Contacts = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // В реальном проекте здесь была бы отправка формы
-    alert("Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.");
+    alert("Thank you for your message! We will contact you soon.");
   };
 
   const contactInfo = [
@@ -20,19 +20,19 @@ const Contacts = () => {
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
-      title: "Телефон",
+      title: "Phone",
       content: "+7 (495) 123-45-67",
       action: "tel:+74951234567"
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: "Офис",
-      content: "Москва, ул. Археологическая, 15",
+      title: "Office",
+      content: "Moscow, Archaeological Street, 15",
       action: null
     },
     {
       icon: <Globe className="h-6 w-6 text-primary" />,
-      title: "Соцсети",
+      title: "Social Media",
       content: "@himalayan_expedition",
       action: "https://twitter.com/himalayan_expedition"
     }
@@ -43,17 +43,17 @@ const Contacts = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent">
-            Контакты
+            Contacts
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Свяжитесь с нами для сотрудничества, инвестиций или получения дополнительной информации о проекте
+            Contact us for collaboration, investments, or additional information about the project
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Свяжитесь с нами</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-8">Contact us</h3>
             
             {contactInfo.map((contact, index) => (
               <Card key={index} className="p-6 bg-gradient-card border-himalayan-moss/30 hover:shadow-gold transition-all duration-300 group">
@@ -81,13 +81,13 @@ const Contacts = () => {
             ))}
 
             <Card className="p-6 bg-gradient-card border-himalayan-moss/30">
-              <h4 className="font-semibold text-foreground mb-3">Руководитель экспедиции</h4>
+              <h4 className="font-semibold text-foreground mb-3">Expedition Leader</h4>
               <p className="text-muted-foreground mb-2">
-                <strong>Доктор Александр Петров</strong>
+                <strong>Dr. Alexander Petrov</strong>
               </p>
               <p className="text-sm text-muted-foreground">
-                Ведущий археолог, специалист по древним цивилизациям Азии. 
-                Более 20 лет опыта полевых исследований в Тибете и Непале.
+                Lead archaeologist, specialist in ancient Asian civilizations. 
+                Over 20 years of field research experience in Tibet and Nepal.
               </p>
             </Card>
           </div>
@@ -95,19 +95,19 @@ const Contacts = () => {
           {/* Contact Form */}
           <div>
             <Card className="p-8 bg-gradient-card border-himalayan-moss/30">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Написать нам</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6">Write to us</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Имя
+                      Name
                     </label>
                     <Input 
                       type="text" 
                       required 
                       className="bg-himalayan-deep/30 border-himalayan-moss focus:border-primary"
-                      placeholder="Ваше имя"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
@@ -125,25 +125,25 @@ const Contacts = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Тема
+                    Subject
                   </label>
                   <Input 
                     type="text" 
                     required 
                     className="bg-himalayan-deep/30 border-himalayan-moss focus:border-primary"
-                    placeholder="Тема сообщения"
+                    placeholder="Message subject"
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Сообщение
+                    Message
                   </label>
                   <Textarea 
                     required 
                     rows={5}
                     className="bg-himalayan-deep/30 border-himalayan-moss focus:border-primary resize-none"
-                    placeholder="Расскажите, как вы хотите помочь нашей экспедиции или какую информацию хотели бы получить..."
+                    placeholder="Tell us how you want to help our expedition or what information you would like to receive..."
                   />
                 </div>
 
@@ -153,7 +153,7 @@ const Contacts = () => {
                   className="bg-gradient-gold hover:shadow-gold transition-all duration-300 transform hover:scale-105 w-full"
                 >
                   <Send className="h-5 w-5 mr-2" />
-                  Отправить сообщение
+                  Send message
                 </Button>
               </form>
             </Card>

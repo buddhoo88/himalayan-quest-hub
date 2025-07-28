@@ -13,31 +13,31 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: "Древние золотые артефакты",
-      description: "Найденные в ходе предыдущих экспедиций буддийские статуэтки и украшения",
+      title: "Ancient golden artifacts",
+      description: "Buddhist figurines and jewelry found during previous expeditions",
       image: artifacts1,
-      category: "Находки"
+      category: "Discoveries"
     },
     {
       id: 2,
-      title: "Место раскопок",
-      description: "Наша команда работает в экстремальных условиях высокогорья",
+      title: "Excavation site",
+      description: "Our team working in extreme high-altitude conditions",
       image: excavationSite,
-      category: "Экспедиция"
+      category: "Expedition"
     },
     {
       id: 3,
-      title: "Древние рукописи",
-      description: "Тибетские манускрипты с золотыми иллюминациями",
+      title: "Ancient manuscripts",
+      description: "Tibetan manuscripts with golden illuminations",
       image: manuscripts,
-      category: "Находки"
+      category: "Discoveries"
     },
     {
       id: 4,
-      title: "Церемониальная маска",
-      description: "Уникальная золотая маска древнего тибетского божества",
+      title: "Ceremonial mask",
+      description: "Unique golden mask of an ancient Tibetan deity",
       image: goldenMask,
-      category: "Находки"
+      category: "Discoveries"
     }
   ];
 
@@ -46,10 +46,10 @@ const Gallery = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent">
-            Галерея
+            Gallery
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Уникальные находки и моменты из наших экспедиций в поисках сокровищ древнего Тибета
+            Unique discoveries and moments from our expeditions in search of ancient Tibet treasures
           </p>
         </div>
 

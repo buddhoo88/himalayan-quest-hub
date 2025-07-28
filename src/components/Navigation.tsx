@@ -14,10 +14,10 @@ const Navigation = () => {
   };
 
   const menuItems = [
-    { id: 'about', label: 'О проекте' },
-    { id: 'gallery', label: 'Галерея' },
-    { id: 'support', label: 'Поддержать' },
-    { id: 'contacts', label: 'Контакты' }
+    { id: 'about', label: 'About' },
+    { id: 'gallery', label: 'Gallery' },
+    { id: 'support', label: 'Support' },
+    { id: 'contacts', label: 'Contacts' }
   ];
 
   return (
@@ -28,7 +28,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-2">
             <Mountain className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold bg-gradient-gold bg-clip-text text-transparent">
-              Гималайская Экспедиция
+              Himalayan Expedition
             </span>
           </div>
 

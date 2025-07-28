@@ -9,8 +9,8 @@ const Support = () => {
   const copyToClipboard = (text: string, type: string) => {
     navigator.clipboard.writeText(text);
     toast({
-      title: "Скопировано!",
-      description: `${type} адрес скопирован в буфер обмена`,
+      title: "Copied!",
+      description: `${type} address copied to clipboard`,
     });
   };
 
@@ -37,11 +37,11 @@ const Support = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-gold bg-clip-text text-transparent">
-            Поддержать проект
+            Support the Project
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ваша поддержка поможет нам осуществить эту уникальную археологическую экспедицию 
-            и открыть новые страницы истории древнего Тибета
+            Your support will help us carry out this unique archaeological expedition 
+            and discover new chapters in the history of ancient Tibet
           </p>
         </div>
 
@@ -53,9 +53,9 @@ const Support = () => {
                 <Coffee className="h-12 w-12 text-primary" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Ko-fi поддержка</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Ko-fi Support</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Поддержите нас через Ko-fi - простой и безопасный способ внести свой вклад в экспедицию
+              Support us through Ko-fi - a simple and secure way to contribute to the expedition
             </p>
             <Button 
               size="lg" 
@@ -63,7 +63,7 @@ const Support = () => {
               onClick={() => window.open('https://ko-fi.com/himalayan_expedition', '_blank')}
             >
               <ExternalLink className="h-5 w-5 mr-2" />
-              Поддержать на Ko-fi
+              Support on Ko-fi
             </Button>
           </Card>
 
@@ -74,9 +74,9 @@ const Support = () => {
                 <Wallet className="h-12 w-12 text-primary" />
               </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Криптовалюта</h3>
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Cryptocurrency</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Поддержите экспедицию криптовалютой - современный и анонимный способ пожертвования
+              Support the expedition with cryptocurrency - a modern and anonymous way to donate
             </p>
             <div className="space-y-3">
               {cryptoWallets.map((wallet) => (
@@ -105,26 +105,26 @@ const Support = () => {
         <Card className="p-8 bg-gradient-card border-himalayan-moss/30">
           <div className="flex items-center justify-center mb-6">
             <Heart className="h-8 w-8 text-primary mr-3" />
-            <h3 className="text-2xl font-bold text-foreground">Почему ваша поддержка важна?</h3>
+            <h3 className="text-2xl font-bold text-foreground">Why is your support important?</h3>
           </div>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">$50,000</div>
-              <div className="text-sm text-muted-foreground">Требуется для экспедиции</div>
+              <div className="text-sm text-muted-foreground">Required for expedition</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">6</div>
-              <div className="text-sm text-muted-foreground">Участников команды</div>
+              <div className="text-sm text-muted-foreground">Team members</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">18</div>
-              <div className="text-sm text-muted-foreground">Месяцев исследований</div>
+              <div className="text-sm text-muted-foreground">Months of research</div>
             </div>
           </div>
           <div className="mt-8 text-center">
             <p className="text-muted-foreground leading-relaxed">
-              Средства пойдут на аренду специального оборудования, транспорт, проживание команды, 
-              страховку и документооборот. Каждый вклад приближает нас к великим открытиям!
+              Funds will go towards renting specialized equipment, transportation, team accommodation, 
+              insurance, and documentation. Every contribution brings us closer to great discoveries!
             </p>
           </div>
         </Card>
