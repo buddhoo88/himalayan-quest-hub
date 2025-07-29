@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center gap-6 mb-12 text-foreground animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="flex items-center space-x-2">
             <MapPin className="h-5 w-5 text-primary" />
-            <span>Tibet, Himalayas</span>
+            <span>Beas River Valleys, Himachal-Paradesh</span>
           </div>
           <div className="flex items-center space-x-2">
             <Calendar className="h-5 w-5 text-primary" />

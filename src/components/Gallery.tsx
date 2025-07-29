@@ -13,31 +13,31 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      title: "Ancient golden artifacts",
-      description: "Buddhist figurines and jewelry found during previous expeditions",
+      title: "Artifacts Discovered",
+      description: "All artefacts discovered, such as Buddhist figurines or ritual objects, will be documented and handed over to local authorities for preservation and further study.",
       image: artifacts1,
       category: "Discoveries"
     },
     {
       id: 2,
-      title: "Excavation site",
-      description: "Our team working in extreme high-altitude conditions",
+      title: "Excavation Sites",
+      description: "Our team will excavate carefully selected areas of the Beas Valley identified through AI analysis of satellite imagery for potential archaeological significance.",
       image: excavationSite,
       category: "Expedition"
     },
     {
       id: 3,
-      title: "Ancient manuscripts",
-      description: "Tibetan manuscripts with golden illuminations",
+      title: "Research Materials",
+      description: "We will analyze historical manuscripts and other cultural materials to gain insight into the ancient civilizations of the region and their significance.",
       image: manuscripts,
-      category: "Discoveries"
+      category: "Research"
     },
     {
       id: 4,
-      title: "Ceremonial mask",
-      description: "Unique golden mask of an ancient Tibetan deity",
+      title: "Our Team",
+      description: "A team of archaeologists, geographers, and logisticians working in challenging high-altitude conditions to uncover the history of the Beas Valley.",
       image: goldenMask,
-      category: "Discoveries"
+      category: "Team"
     }
   ];
 
@@ -49,7 +49,7 @@ const Gallery = () => {
             Gallery
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Unique discoveries and moments from our expeditions in search of ancient Tibet treasures
+            Documentation of our archaeological work in the Beas River Valley and discoveries from our expedition
           </p>
         </div>
 

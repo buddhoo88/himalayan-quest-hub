@@ -25,16 +25,28 @@ const Contacts = () => {
       action: "tel:+74951234567"
     },
     {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: "Office",
-      content: "Moscow, Archaeological Street, 15",
-      action: null
+      icon: <Globe className="h-6 w-6 text-primary" />,
+      title: "Twitter",
+      content: "@himalayan_expedition",
+      action: "https://twitter.com/himalayan_expedition"
     },
     {
       icon: <Globe className="h-6 w-6 text-primary" />,
-      title: "Social Media",
-      content: "@himalayan_expedition",
-      action: "https://twitter.com/himalayan_expedition"
+      title: "Instagram",
+      content: "@beas_valley_expedition",
+      action: "https://instagram.com/beas_valley_expedition"
+    },
+    {
+      icon: <Globe className="h-6 w-6 text-primary" />,
+      title: "Facebook",
+      content: "Beas Valley Archaeological Project",
+      action: "https://facebook.com/beasvalleyarchaeology"
+    },
+    {
+      icon: <Globe className="h-6 w-6 text-primary" />,
+      title: "YouTube",
+      content: "Himalayan Expeditions",
+      action: "https://youtube.com/@himalayanexpeditions"
     }
   ];
 

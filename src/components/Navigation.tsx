@@ -20,6 +20,10 @@ const Navigation = () => {
     { id: 'contacts', label: 'Contacts' }
   ];
 
+  const handleGalleryClick = () => {
+    window.location.href = '/gallery';
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-himalayan-deep/90 backdrop-blur-md border-b border-himalayan-moss/30">
       <div className="container mx-auto px-4 py-4">
@@ -44,6 +48,13 @@ const Navigation = () => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
+            <button
+              onClick={handleGalleryClick}
+              className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+            >
+              Full Gallery
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,6 +80,12 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <button
+              onClick={handleGalleryClick}
+              className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors duration-300"
+            >
+              Full Gallery
+            </button>
           </div>
         )}
       </div>

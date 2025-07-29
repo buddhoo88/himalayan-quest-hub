@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: <Target className="h-8 w-8 text-primary" />,
       title: "Expedition Goal",
-      description: "Search and study ancient artifacts of Tibetan civilization hidden in the high-altitude regions of the Himalayas"
+      description: "To discover and study artifacts of ancient civilizations in the Beas River Valley, using satellite imagery analysis and field research, with a focus on the region's historical significance as the eastern boundary of Alexander the Great's campaigns in 326 BCE."
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,
       title: "Location",
-      description: "Remote areas of Tibet at altitudes of 4000-5500 meters, where treasures are hidden according to legends"
+      description: "The Beas River Valley, flowing through Manali, Himalayas, starting from its source near the Rohtang Pass (altitude approximately 4,360 m) and through the Kullu Valley, where the river shapes a unique landscape and is part of the tourism infrastructure."
     },
     {
       icon: <Calendar className="h-8 w-8 text-primary" />,
       title: "Duration",
-      description: "18-month expedition with three main seasons of excavations and research"
+      description: "A 6-month expedition with one main season of excavations and research, avoiding the monsoon season."
     },
     {
       icon: <Award className="h-8 w-8 text-primary" />,
       title: "Scientific Value",
-      description: "Potential to discover new data about ancient trade routes and cultural connections"
+      description: "The potential discovery of new data on ancient regional cultures, their trade routes, and connections with the Harappan civilization, as well as exploring the historical role of the Beas River as the eastern boundary of Alexander the Great's campaigns, mentioned in ancient texts as Vipāśā."
     }
   ];
 
@@ -33,8 +33,7 @@ const About = () => {
             About the Project
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our international archaeological expedition ventures into the most remote corners of the Himalayas 
-            in search of lost treasures of ancient Tibetan civilization.
+            Our international archaeological expedition is heading to the Beas River Valley (ancient Sanskrit name — Vipāśā, Greek — Hyphasis), located in the Manali region, Himalayas, to search for traces of lost civilizations possibly connected to the ancient cultures of the area.
           </p>
         </div>
 
@@ -58,18 +57,18 @@ const About = () => {
           <h3 className="text-2xl font-bold mb-4 text-primary">Historical Significance</h3>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              The Himalayan region holds many secrets of ancient history. According to Tibetan chronicles 
-              and Chinese historical documents, these mountains contain burial sites of ancient kingdom rulers, 
-              as well as temple treasuries hidden from conquerors.
+              The Beas River Valley holds many secrets of ancient history. According to historical records 
+              and archaeological evidence, this region was significant as the eastern boundary of Alexander the Great's campaigns in 326 BCE, 
+              mentioned in ancient texts as Vipāśā (Sanskrit) or Hyphasis (Greek).
             </p>
             <p>
               Our expedition uses modern technologies: ground-penetrating radar, thermal drones, 
-              and satellite cartography to detect hidden structures beneath centuries-old sediments.
+              and satellite cartography to detect hidden structures and archaeological sites in the Beas Valley.
             </p>
             <p>
-              Expected finds include gold and silver artifacts, ancient manuscripts, 
-              religious objects, and everyday items that will help better understand the culture 
-              and trade connections of ancient Tibet.
+              Expected finds include artifacts related to ancient regional cultures, trade route evidence, 
+              connections with the Harappan civilization, and materials that will help better understand the historical 
+              significance of this region in ancient times.
             </p>
           </div>
         </Card>
