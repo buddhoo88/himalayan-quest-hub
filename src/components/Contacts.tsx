@@ -15,38 +15,26 @@ const Contacts = () => {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      content: "expedition@himalayan-quest.org",
-      action: "mailto:expedition@himalayan-quest.org"
-    },
-    {
-      icon: <Phone className="h-6 w-6 text-primary" />,
-      title: "Phone",
-      content: "+7 (495) 123-45-67",
-      action: "tel:+74951234567"
-    },
-    {
-      icon: <Globe className="h-6 w-6 text-primary" />,
-      title: "Twitter",
-      content: "@himalayan_expedition",
-      action: "https://twitter.com/himalayan_expedition"
+      content: "buddhoo88@gmail.com",
+      action: "mailto:buddhoo88@gmail.com"
     },
     {
       icon: <Globe className="h-6 w-6 text-primary" />,
       title: "Instagram",
-      content: "@beas_valley_expedition",
-      action: "https://instagram.com/beas_valley_expedition"
+      content: "@himalayansearch",
+      action: "https://www.instagram.com/himalayansearch"
     },
     {
       icon: <Globe className="h-6 w-6 text-primary" />,
       title: "Facebook",
-      content: "Beas Valley Archaeological Project",
-      action: "https://facebook.com/beasvalleyarchaeology"
+      content: "Beas Valley Expedition",
+      action: "https://www.facebook.com/profile.php?id=100093136745670"
     },
     {
       icon: <Globe className="h-6 w-6 text-primary" />,
       title: "YouTube",
-      content: "Himalayan Expeditions",
-      action: "https://youtube.com/@himalayanexpeditions"
+      content: "K_Analistoriy",
+      action: "https://www.youtube.com/@k_analistoriy"
     }
   ];
 
@@ -95,11 +83,11 @@ const Contacts = () => {
             <Card className="p-6 bg-gradient-card border-himalayan-moss/30">
               <h4 className="font-semibold text-foreground mb-3">Expedition Leader</h4>
               <p className="text-muted-foreground mb-2">
-                <strong>Dr. Alexander Petrov</strong>
+                <strong>Aleksandr Karpenko</strong>
               </p>
               <p className="text-sm text-muted-foreground">
                 Lead archaeologist, specialist in ancient Asian civilizations. 
-                Over 20 years of field research experience in Tibet and Nepal.
+                Over 20 years of field research experience in the Himalayas region.
               </p>
             </Card>
           </div>

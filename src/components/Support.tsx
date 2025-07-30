@@ -17,18 +17,18 @@ const Support = () => {
   const cryptoWallets = [
     {
       name: "Bitcoin",
-      address: "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+      address: "bc1q9psnl6wgzrgpqgdc6u9u9p4rvy3xaljrk8j8gy",
       symbol: "BTC"
     },
     {
       name: "Ethereum",
-      address: "0x742d35Cc6e9a7F4C0e8B6e9f8E5c8e5f2c8b8e5c",
+      address: "0x77Fa984EeCeE8bb7Ddf870322Ac37BBaF9A307cf",
       symbol: "ETH"
     },
     {
-      name: "Litecoin",
-      address: "ltc1qw4xzk5d8c7v9b2n1m3k5j7h8g6f4d3s2a1z0x9c8v",
-      symbol: "LTC"
+      name: "USDT",
+      address: "TSKhRW3rAdpJgWKesAE1ScQaYcQZT8XYpt",
+      symbol: "USDT"
     }
   ];
 
@@ -49,7 +49,7 @@ const Support = () => {
           <Button 
             size="lg" 
             className="bg-gradient-gold hover:shadow-gold transition-all duration-300 transform hover:scale-105 h-16"
-            onClick={() => window.open('https://ko-fi.com/himalayan_expedition', '_blank')}
+            onClick={() => window.open('https://ko-fi.com/bodho/goal?g=1', '_blank')}
           >
             <ExternalLink className="h-5 w-5 mr-2" />
             Ko-fi
@@ -58,7 +58,7 @@ const Support = () => {
           <Button 
             size="lg" 
             className="bg-gradient-gold hover:shadow-gold transition-all duration-300 transform hover:scale-105 h-16"
-            onClick={() => window.open('https://giveth.io/project/himalayan-expedition', '_blank')}
+            onClick={() => window.open('https://giveth.io/project/beas-valley-civilization-search', '_blank')}
           >
             <ExternalLink className="h-5 w-5 mr-2" />
             Giveth.io
