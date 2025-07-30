@@ -35,6 +35,12 @@ const Contacts = () => {
       title: "YouTube",
       content: "K_Analistoriy",
       action: "https://www.youtube.com/@k_analistoriy"
+    },
+    {
+      icon: <Globe className="h-6 w-6 text-primary" />,
+      title: "TikTok",
+      content: "@hymalayanexpedition",
+      action: "https://www.tiktok.com/@hymalayanexpedition"
     }
   ];
 
@@ -53,8 +59,6 @@ const Contacts = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Contact us</h3>
-            
             {contactInfo.map((contact, index) => (
               <Card key={index} className="p-6 bg-gradient-card border-himalayan-moss/30 hover:shadow-gold transition-all duration-300 group">
                 <div className="flex items-center space-x-4">
@@ -79,17 +83,6 @@ const Contacts = () => {
                 </div>
               </Card>
             ))}
-
-            <Card className="p-6 bg-gradient-card border-himalayan-moss/30">
-              <h4 className="font-semibold text-foreground mb-3">Expedition Leader</h4>
-              <p className="text-muted-foreground mb-2">
-                <strong>Aleksandr Karpenko</strong>
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Lead archaeologist, specialist in ancient Asian civilizations. 
-                Over 20 years of field research experience in the Himalayas region.
-              </p>
-            </Card>
           </div>
 
           {/* Contact Form */}
@@ -158,6 +151,20 @@ const Contacts = () => {
               </form>
             </Card>
           </div>
+        </div>
+
+        {/* Expedition Leader Card - Full Width */}
+        <div className="mt-12">
+          <Card className="p-6 bg-gradient-card border-himalayan-moss/30">
+            <h4 className="font-semibold text-foreground mb-3">Expedition Leader</h4>
+            <p className="text-muted-foreground mb-2">
+              <strong>Aleksandr Karpenko</strong>
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Lead archaeologist, specialist in ancient Asian civilizations. 
+              Over 20 years of field research experience in the Himalayas region.
+            </p>
+          </Card>
         </div>
       </div>
     </section>
