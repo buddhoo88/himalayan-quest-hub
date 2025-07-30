@@ -3,9 +3,9 @@ import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ZoomIn } from "lucide-react";
 import artifacts1 from "@/assets/artifacts-1.jpg";
-import excavationSite from "@/assets/excavation-site.jpg";
+import excavationSite from "@/assets/excavation-team-new.jpg";
 import manuscripts from "@/assets/manuscripts.jpg";
-import goldenMask from "@/assets/golden-mask.jpg";
+import goldenMask from "@/assets/river-expedition.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

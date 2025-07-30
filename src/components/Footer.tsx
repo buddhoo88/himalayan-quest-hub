@@ -50,15 +50,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">expedition@himalayan-quest.org</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">+7 (495) 123-45-67</span>
+                <span className="text-muted-foreground">buddhoo88@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Globe className="h-5 w-5 text-primary" />
-                <span className="text-muted-foreground">@himalayan_expedition</span>
+                <span className="text-muted-foreground">@himalayansearch</span>
               </div>
             </div>
           </div>
