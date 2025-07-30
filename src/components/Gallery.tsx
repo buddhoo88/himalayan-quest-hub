@@ -5,7 +5,7 @@ import { ZoomIn } from "lucide-react";
 import artifacts1 from "@/assets/artifacts-1.jpg";
 import excavationSite from "@/assets/excavation-team-new.jpg";
 import manuscripts from "@/assets/manuscripts.jpg";
-import goldenMask from "@/assets/river-expedition.jpg";
+import goldenMask from "@/assets/team-cave-exploration.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
