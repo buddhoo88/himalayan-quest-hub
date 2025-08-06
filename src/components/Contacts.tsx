@@ -158,7 +158,7 @@ const Contacts = () => {
           <Card className="p-6 bg-gradient-card border-himalayan-moss/30">
             <h4 className="font-semibold text-foreground mb-3">Expedition Leader</h4>
             <p className="text-muted-foreground mb-2">
-              <strong>Aleksandr Karpenko</strong>
+              <strong>Aleksandr Karp</strong>
             </p>
             <p className="text-sm text-muted-foreground">
               Lead archaeologist, specialist in ancient Asian civilizations. 

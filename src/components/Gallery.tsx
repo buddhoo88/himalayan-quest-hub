@@ -86,16 +86,16 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {galleryItems.map((item) => (
             <Dialog key={item.id}>
               <DialogTrigger asChild>
                 <Card className="group cursor-pointer overflow-hidden bg-gradient-card border-himalayan-moss/30 hover:shadow-gold transition-all duration-300 transform hover:scale-105">
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden aspect-square">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-himalayan-deep/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-4 right-4 bg-primary/20 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -107,11 +107,11 @@ const Gallery = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold mb-1 text-foreground group-hover:text-primary transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
                       {item.description}
                     </p>
                   </div>
