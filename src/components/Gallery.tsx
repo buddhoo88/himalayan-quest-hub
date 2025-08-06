@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ZoomIn } from "lucide-react";
-import artifacts1 from "@/assets/artifacts-1.jpg";
-import excavationSite from "@/assets/excavation-team-new.jpg";
-import manuscripts from "@/assets/manuscripts.jpg";
-import goldenMask from "@/assets/team-cave-exploration.jpg";
+import artifacts1 from "@/assets/discoveries/artifacts-1.jpg";
+import excavationSite from "@/assets/expedition/excavation-team-new.jpg";
+import manuscripts from "@/assets/research/manuscripts.jpg";
+import teamCave from "@/assets/team/team-cave-exploration.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -36,7 +36,7 @@ const Gallery = () => {
       id: 4,
       title: "Our Team",
       description: "A team of archaeologists, geographers, and logisticians working in challenging high-altitude conditions to uncover the history of the Beas Valley.",
-      image: goldenMask,
+      image: teamCave,
       category: "Team"
     }
   ];
