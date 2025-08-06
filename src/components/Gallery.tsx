@@ -1,45 +1,78 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { ZoomIn } from "lucide-react";
-import artifacts1 from "@/assets/discoveries/artifacts-1.jpg";
-import excavationSite from "@/assets/expedition/excavation-team-new.jpg";
-import manuscripts from "@/assets/research/manuscripts.jpg";
-import teamCave from "@/assets/team/team-cave-exploration.jpg";
+
+// Dynamic imports for all images
+const discoveriesImages = import.meta.glob('/src/assets/discoveries/*.{png,jpg,jpeg,webp}', { eager: true, as: 'url' });
+const expeditionImages = import.meta.glob('/src/assets/expedition/*.{png,jpg,jpeg,webp}', { eager: true, as: 'url' });
+const researchImages = import.meta.glob('/src/assets/research/*.{png,jpg,jpeg,webp}', { eager: true, as: 'url' });
+const teamImages = import.meta.glob('/src/assets/team/*.{png,jpg,jpeg,webp}', { eager: true, as: 'url' });
+
+interface GalleryItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+}
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
 
-  const galleryItems = [
-    {
-      id: 1,
-      title: "Artifacts Discovered",
-      description: "All artefacts discovered, such as Buddhist figurines or ritual objects, will be documented and handed over to local authorities for preservation and further study.",
-      image: artifacts1,
-      category: "Discoveries"
-    },
-    {
-      id: 2,
-      title: "Excavation Sites",
-      description: "Our team will excavate carefully selected areas of the Beas Valley identified through AI analysis of satellite imagery for potential archaeological significance.",
-      image: excavationSite,
-      category: "Expedition"
-    },
-    {
-      id: 3,
-      title: "Research Materials",
-      description: "We will analyze historical manuscripts and other cultural materials to gain insight into the ancient civilizations of the region and their significance.",
-      image: manuscripts,
-      category: "Research"
-    },
-    {
-      id: 4,
-      title: "Our Team",
-      description: "A team of archaeologists, geographers, and logisticians working in challenging high-altitude conditions to uncover the history of the Beas Valley.",
-      image: teamCave,
-      category: "Team"
-    }
-  ];
+  useEffect(() => {
+    const allItems: GalleryItem[] = [];
+
+    // Add Discoveries images
+    Object.entries(discoveriesImages).forEach(([path, url], index) => {
+      const filename = path.split('/').pop()?.split('.')[0] || '';
+      allItems.push({
+        id: `discoveries-${index}`,
+        title: `Discovery ${index + 1}`,
+        description: "Archaeological artifacts and discoveries from our excavation work in the Beas Valley region.",
+        image: url,
+        category: "Discoveries"
+      });
+    });
+
+    // Add Expedition images
+    Object.entries(expeditionImages).forEach(([path, url], index) => {
+      const filename = path.split('/').pop()?.split('.')[0] || '';
+      allItems.push({
+        id: `expedition-${index}`,
+        title: `Expedition ${index + 1}`,
+        description: "Documentation of our field work and excavation activities in the challenging Himalayan terrain.",
+        image: url,
+        category: "Expedition"
+      });
+    });
+
+    // Add Research images
+    Object.entries(researchImages).forEach(([path, url], index) => {
+      const filename = path.split('/').pop()?.split('.')[0] || '';
+      allItems.push({
+        id: `research-${index}`,
+        title: `Research ${index + 1}`,
+        description: "Historical manuscripts, maps, and research materials guiding our archaeological work.",
+        image: url,
+        category: "Research"
+      });
+    });
+
+    // Add Team images
+    Object.entries(teamImages).forEach(([path, url], index) => {
+      const filename = path.split('/').pop()?.split('.')[0] || '';
+      allItems.push({
+        id: `team-${index}`,
+        title: `Team ${index + 1}`,
+        description: "Our dedicated team of archaeologists, researchers, and expedition members at work.",
+        image: url,
+        category: "Team"
+      });
+    });
+
+    setGalleryItems(allItems);
+  }, []);
 
   return (
     <section id="gallery" className="py-20 px-4 bg-himalayan-forest">
@@ -85,6 +118,8 @@ const Gallery = () => {
                 </Card>
               </DialogTrigger>
               <DialogContent className="max-w-4xl bg-card border-himalayan-moss">
+                <DialogTitle className="sr-only">{item.title}</DialogTitle>
+                <DialogDescription className="sr-only">{item.description}</DialogDescription>
                 <div className="space-y-4">
                   <img
                     src={item.image}
